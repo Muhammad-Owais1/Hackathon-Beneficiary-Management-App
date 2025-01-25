@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import "dotenv/config";
 import signupDb from "../db/signup.js";
 
 const signupService = async (data) => {

@@ -1,8 +1,8 @@
 import Model from "../models/index.js";
 
-const signupDb = (data) => {
+const signupDb = async (data) => {
   try {
-    return Model(data).save();
+    return await Model(data).save();
   } catch (error) {
     throw error;
   }
